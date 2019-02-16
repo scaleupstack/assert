@@ -1,0 +1,28 @@
+<phpunit
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.5/phpunit.xsd"
+  backupGlobals="true"
+  backupStaticAttributes="false"
+  bootstrap="tests/bootstrap.php"
+  colors="true"
+  forceCoversAnnotation="true"
+  processIsolation="false"
+  stopOnRisky="false"
+  timeoutForSmallTests="1"
+  timeoutForMediumTests="10"
+  timeoutForLargeTests="60"
+  verbose="false">
+  <testsuites>
+    <testsuite name="scaleupstack/assert test suite">
+      <directory>./tests/phpunit/</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">src</directory>
+    </whitelist>
+  </filter>
+  <logging>
+    <log type="coverage-html" target="var/coverage" lowUpperBound="98" highLowerBound="100"/>
+  </logging>
+</phpunit>

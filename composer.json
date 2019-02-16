@@ -1,0 +1,29 @@
+{
+    "name": "scaleupstack/assert",
+    "description": "A wrapper of webmozart/assert that allows to define a project-specific exception class.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ScaleUpStack\\Assert\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ScaleUpStack\\Assert\\Tests\\": ["tests/phpunit/", "tests/resources/", "tests/fixtures/"]
+        }
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Thomas Nunninger",
+            "email": "thomas.nunninger@scaleupventures.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "webmozart/assert": "^1."
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7."
+    }
+}
