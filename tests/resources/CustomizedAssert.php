@@ -10,14 +10,11 @@
  * @link      https://github.com/scaelupstack/assert
  */
 
-namespace ScaleUpStack\Assert;
+namespace ScaleUpStack\Assert\Tests;
 
-class Assert extends \Webmozart\Assert\Assert
+use ScaleUpStack\Assert\Assert;
+
+final class CustomizedAssert extends Assert
 {
-    protected static $assertionClassName = InvalidArgumentException::class;
-
-    protected static function reportInvalidArgument($message)
-    {
-        throw new static::$assertionClassName($message);
-    }
+    protected static $assertionClassName = \RuntimeException::class;
 }
