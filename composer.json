@@ -1,7 +1,13 @@
 {
     "name": "scaleupstack/assert",
-    "description": "A wrapper of webmozart/assert that allows to define a project-specific exception class.",
+    "description": "A tiny wrapper around webmozart/assert that is easily extendable to throw project-specific assertions.",
     "type": "library",
+    "keywords": [
+        "assert",
+        "assertion",
+        "check",
+        "validation"
+    ],
     "autoload": {
         "psr-4": {
             "ScaleUpStack\\Assert\\": "src/"
