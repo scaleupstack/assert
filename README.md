@@ -13,7 +13,7 @@ The concept how to extend the base class was inspired by [beberlei/assert].
 Use [Composer] to install this library:
 
 ```
-$ composer require scaleupventures/assert
+$ composer require scaleupstack/assert
 ```
 
 
