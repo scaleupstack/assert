@@ -17,12 +17,12 @@ $ composer require scaleupstack/assert
 ```
 
 
-## Introduction
+## Usage
 
 ```php
 <?php declare(strict_types = 1);
 
-namespace ScaleUpStack\Assert\Tests;
+namespace Your\Namespace;
 
 use ScaleUpStack\Assert\Assert as BaseAssert;
 
@@ -35,7 +35,7 @@ final class Assert extends BaseAssert
 
 ## Contribute
 
-Thanks that you want to contribute to ScaleUpVentures/Assert.
+Thanks that you want to contribute to ScaleUpStack/Assert.
 
 * Report any bugs or issues on the [issue tracker].
 
